@@ -1,0 +1,208 @@
+// .container{
+//  margin: 0 auto;
+//  width: 500px;
+//  height: 500px;
+// }
+
+html,
+body {  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+ }
+
+
+wrap {
+  height: 80%;
+  width: 80%;
+}
+
+canvas {
+  background: #2FCDB4;
+  display: block;
+  margin: -37.5vmin;
+  z-index: 2;
+}
+.myCanvas{
+  position: relative;
+  margin: 100;
+  }
+
+$n: 12; // has to match number of nodes in DOM
+// $r-outer: 45vmin;
+// $r-inner: $r-outer/2.5;
+
+html { overflow: hidden; background: lightcyan; }
+
+.gallery, .gallery *, .gallery *:before, .gallery *:after {
+ overflow: hidden;
+ position: absolute;
+ right: 50%; bottom: 50%;
+ width: inherit; height: inherit;
+ display: block;
+}
+
+.gallery {
+ margin: -40vmin;
+ width: 75vmin; height: 75vmin;
+ border-radius: 50%;
+ z-index: -1;
+ display: block;
+ position: fixed;
+ padding: 20px;
+}
+
+
+
+.time_10-11 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_11-12 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+
+
+.time_12-1 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+
+.time_1-2 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_2-3 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_3-4 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_4-5 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_5-6 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_6-7 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_7-8 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_8-9 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+}}}
+.time_9-10 {
+ $a: 360deg/($n);
+ border: none;
+ @for $i from 1 to 145 {
+ &:nth-child(#{$i}) {
+ transform: rotate($i*$a) skew(60deg);
+ transform-origin: 100% 100%;
+ }}}
+
+
+@keyframes rot { to { transform: rotate(0deg); } }
+
+
+.contents{
+  z-index: -3;
+  float: left;
+}
+
+.schedule{
+  float: right;
+}
+
+.tab-menu {
+  width: 500px;
+  margin-left: 60px;
+}
+
+.tab-menu ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.tab-menu li {
+  display: inline-block;
+  width: 120px;
+  height: 22px;
+  padding: 10px 10px 5px;
+  cursor: pointer;
+  background-color: #AECD6A;
+  border-top-right-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.tab-menu li.selected {
+  background-color: #fff;
+  color: #AECD6A;
+}
+
+.contents {
+  background-color: #fff;
+  height: 360px;
+  padding: 20px;
+}
+
+.contents .right {
+  display: none;
+}
+

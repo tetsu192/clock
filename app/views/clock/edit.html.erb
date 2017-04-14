@@ -1,0 +1,75 @@
+<div class = 'contents'>
+  <%= form_tag('/clock',method: :post ) do %>
+  <p>開始時間</p>
+<select name="first_time" >
+  <option value="00">0時</option>
+  <option value="01">1時</option>
+  <option value="02">2時</option>
+  <option value="03">3時</option>
+  <option value="04">4時</option>
+  <option value="05">5時</option>
+  <option value="06">6時</option>
+  <option value="07">7時</option>
+  <option value="08">8時</option>
+  <option value="09">9時</option>
+  <option value="10">10時</option>
+  <option value="11">11時</option>
+  <option value="12">12時</option>
+  <option value="13">13時</option>
+  <option value="14">14時</option>
+  <option value="15">15時</option>
+  <option value="16">16時</option>
+  <option value="17">17時</option>
+  <option value="18">18時</option>
+  <option value="19">19時</option>
+  <option value="20">20時</option>
+  <option value="21">21時</option>
+  <option value="22">22時</option>
+  <option value="23">23時</option>
+
+</select>
+　<p>終了時間</p>
+  <select name="finish_time" >
+  <option value="00">0時</option>
+  <option value="01">1時</option>
+  <option value="02">2時</option>
+  <option value="03">3時</option>
+  <option value="04">4時</option>
+  <option value="05">5時</option>
+  <option value="06">6時</option>
+  <option value="07">7時</option>
+  <option value="08">8時</option>
+  <option value="09">9時</option>
+  <option value="10">10時</option>
+  <option value="11">11時</option>
+  <option value="12">12時</option>
+  <option value="13">13時</option>
+  <option value="14">14時</option>
+  <option value="15">15時</option>
+  <option value="16">16時</option>
+  <option value="17">17時</option>
+  <option value="18">18時</option>
+  <option value="19">19時</option>
+  <option value="20">20時</option>
+  <option value="21">21時</option>
+  <option value="22">22時</option>
+  <option value="23">23時</option>
+
+</select> 
+ <br>
+
+  <textarea cols="30" name="text" placeholder="text" rows="10">
+    
+  </textarea>
+
+  <br>
+    <input id='submit' type = "submit" value = "送信する" , >
+  <br>
+   
+  </div>
+
+
+</div>
+<% end %>
+
+<%= link_to 'この予定を削除する' , "/clock" , method: :delete %>
